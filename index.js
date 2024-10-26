@@ -6,11 +6,11 @@ mongoose
   .connect("mongodb+srv://Dharshni:Dharshni@19@cluster0.jzr8b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     console.log("Connected to MongoDB");
-    app.listen(config.PORT, () => {
-      console.log(`Server running on ${config.PORT}`);
+    app.listen(10000, () => {
+      console.log(`Server running on 10000`);
     });
   })
   .catch((error) => {
-    console.log(config.URL)
+    console.log("mongodb+srv://Dharshni:Dharshni@19@cluster0.jzr8b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     console.error("Error Connecting to MongoDB", error);
   });
