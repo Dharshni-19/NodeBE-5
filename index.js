@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const app = require("./app");
 
 mongoose
-  .connect("mongodb://0.0.0.0:27017/mydatabase")
+  .connect("mongodb+srv://Dharshni:Dharshni@19@cluster0.jzr8b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     console.log("Connected to MongoDB");
     app.listen(config.PORT, () => {
