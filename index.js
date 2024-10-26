@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const app = require("./app");
 
 mongoose
-  .connect("mongodb://localhost:27017/mydatabase")
+  .connect("mongodb://127.0.0.1:27017/mydatabase?directConnection=true")
   .then(() => {
     console.log("Connected to MongoDB");
     app.listen(config.PORT, () => {
